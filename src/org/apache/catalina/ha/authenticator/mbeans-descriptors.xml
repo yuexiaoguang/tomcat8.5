@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mbeans-descriptors>
+  <mbean
+    name="ClusterSingleSignOn"
+    description="A Valve that supports a 'single signon' user experience on a whole cluster"
+    domain="Catalina"
+    group="Valve"
+    type="org.apache.catalina.ha.authenticator.ClusterSingleSignOn">
+    <attribute
+      name="asyncSupported"
+      description="Does this valve support async reporting?"
+      is="true"
+      type="boolean"/>
+    <attribute
+      name="className"
+      description="Fully qualified class name of the managed object"
+      type="java.lang.String"
+      writeable="false"/>
+    <attribute
+      name="requireReauthentication"
+      description="Should we attempt to reauthenticate each request against the security Realm?"
+      type="boolean"/>
+    <attribute
+      name="cookieDomain"
+      description="(Optional) Domain to be used by sso cookies"
+      type="java.lang.String"/>
+    <attribute
+      name="mapSendOptions"
+      description="mapSendOptions"
+      type="int"
+      writeable="false"/>
+    <attribute
+      name="rpcTimeout"
+      description="Timeout for RPC messages, how long we will wait for a reply"
+      type="long"/>
+    <attribute
+      name="terminateOnStartFailure"
+      description="Flag for whether to terminate this map that failed to start."
+      type="boolean"/>
+    <attribute
+      name="accessTimeout"
+      description="The timeout for a ping message in replication map."
+      type="long"/>
+  </mbean>
+</mbeans-descriptors>

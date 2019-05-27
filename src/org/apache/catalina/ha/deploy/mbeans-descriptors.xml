@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mbeans-descriptors>
+  <mbean
+    name="FarmWarDeployer"
+    className="org.apache.catalina.mbeans.ClassNameMBean"
+    description="Farm Deployer"
+    domain="Catalina"
+    group="Cluster"
+    type="org.apache.catalina.ha.deploy.FarmWarDeployer">
+    <attribute
+      name="deployDir"
+      description="Deployment directory."
+      type="java.lang.String"/>
+    <attribute
+      name="tempDir"
+      description="The temporaryDirectory to store binary data when downloading a war from the cluster"
+      type="java.lang.String"/>
+    <attribute
+      name="watchDir"
+      description="The directory where we watch for changes"
+      type="java.lang.String"/>
+    <attribute
+      name="watchEnabled"
+      description="Is watching enabled?"
+      type="boolean"/>
+    <attribute
+      name="processDeployFrequency"
+      description="Frequency of the Farm watchDir check."
+      type="int"/>
+    <attribute
+      name="maxValidTime"
+      description="The maximum valid time of FileMessageFactory."
+      type="int"/>
+  </mbean>
+</mbeans-descriptors>
